@@ -3,6 +3,11 @@ def fnA(x): # we may choose to pass in arguments
     '''we often provide a docstring to explain a function'''
     print(f'value of x is {x} of type {type(x)}')
 
+# careful any type hints are ONLY used by code help tools
+# type hints are completely ignored by Python
+def demoFn()->int: # a code hint
+    return "not an integer"
+
 def askUser(prompt):
     '''show the user a prompt and invite them to respond by typing'''
     # the code will pause for input and only continue when the user presses ENTER
