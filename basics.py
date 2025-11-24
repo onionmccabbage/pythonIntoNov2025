@@ -24,7 +24,7 @@ print(f"We have {b}, also {w} and {s[11:33]}") # NB this is a string builder - t
 
 # List and Tuple
 # a list is an ordinal mutable collection of any data type
-l = list( (4,7,7,9,4,2) ) # here we explicitly create a list
+l = list( (4,7,7,9,4,2) ) # here we explicitly create a list (from a tuple)
 k = [4,7,2,8,1,22] # this is more common
 # lists are mutable so we may choose to alster their contents
 l[0] = 'changed'
@@ -46,3 +46,27 @@ is it                   time for break???'''
 g = """still 
 cool"""
 print(d, e, f, g)
+
+# Operators
+# + - / * are easy
+# // for modulo dovision
+# % for remainder after division
+
+m = 5
+n = 2
+print(m/n, m//n, m%n) # 2.5, 2, 1
+
+# tuples
+t = tuple(l) # take all the members of the list 'l' and populate a tuple
+# a tuple is an ordinal immutable collection of any data type
+t = (4,3,2,1)
+print(t, type(t), t[0:3]) # we cannot insert, append or change an existing tuple (imutable)
+
+# list and tuple are very similar except a list is mutable
+# We may iterate over any oordinal collection
+for i in t: # start at the member 0 and keep going until we run out of members
+    print(i)
+
+# Code blocks are declared using a colon and indentation
+# the colon is the start of a code block
+# the code block continues until the indentation ends

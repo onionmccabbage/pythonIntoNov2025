@@ -11,11 +11,14 @@ Toby Dussek
  3:00 afternoon break 15min
  4:30 end
 
+all my code wil be here https://github.com/onionmccabbage/pythonIntoNov2025
+
+
 Monday
 > Welcome and intros
-- where to write code: module (just a file) or immediate python
+> where to write code: module (just a file) or immediate python
 - architecture, structure, and professional code best practice
-- maths operators and data types
+> maths operators and data types
 - indentation
 > immutable strings
 - lists and tuples (and memory efficiency)
