@@ -5,6 +5,12 @@ Python Introduction
 
 Toby Dussek
 
+ 9:30 start
+11:00 morning break 15min
+12:00 lunch break 1hr
+ 3:00 afternoon break 15min
+ 4:30 end
+
 Monday
 - Welcome and intros
 - where to write code: module (just a file) or immediate python
