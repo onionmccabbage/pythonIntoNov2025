@@ -28,6 +28,13 @@ def r():
     i = random.randint(0,10)
     return i
 
+def runloop():
+    '''Keep making random numbers until we get exactly 7'''
+    while True: # careful - this will run endlessly (until we kill it!!!)
+        i = random.randint(0,10)
+        if i==7:
+            break # this breaks out of the while loop
+
 
 # .. then later we invoke those functions (or methods of a class)
 if __name__ == '__main__':
@@ -38,4 +45,7 @@ if __name__ == '__main__':
     print( checkIfPrime(3) )
     print( checkIfPrime(30) )
     print( checkIfPrime(29) )
+    for i in (0,1,2,3,4):
+        print( r() )
+    runloop() # runs endlessly
 
