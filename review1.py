@@ -7,7 +7,11 @@ guess_counter = 0
 
 while True: # keep going!!
     guess_counter += 1
-    guess = int(float(input('guess:'))) # make sure it's an int
+    # we reeally should validate here!!!!!!
+    try:
+        guess = int(float(input('guess:'))) # make sure it's an int
+    except:
+        continue # jump to the next iteration of the while loop
     # conditionally act on the guess
     if guess == -2: # do they want a clue
         # odd or even
@@ -16,7 +20,7 @@ while True: # keep going!!
         else:
              print('Odd')
         # square number
-        if (target**0.5) == int(target**0.5):
+        if (target**0.5) == int(target**0.5): # raise to power half is the square root
              print('Square')
         # prime number
         if target in primes_t:
