@@ -35,3 +35,14 @@ k.append(l) # we may have any data type within our list
 print(l, k, type(l))
 # mini challenge: 
 print( k[7][0][2] ) # we may access members within members within members of a collection
+
+# strings and quotes
+# Python does not care which quote marks you use
+d = 'hello'
+e = "double \nhello\tfollowed by tab" # we may choose to encode whitespace
+# tripple quotes let us incluse whitespace (tabs, new lines etc)
+f = '''this is cool
+is it                   time for break???'''
+g = """still 
+cool"""
+print(d, e, f, g)

@@ -12,15 +12,15 @@ Toby Dussek
  4:30 end
 
 Monday
-- Welcome and intros
+> Welcome and intros
 - where to write code: module (just a file) or immediate python
 - architecture, structure, and professional code best practice
 - maths operators and data types
 - indentation
-- immutable strings
+> immutable strings
 - lists and tuples (and memory efficiency)
-- identifiers
-- boolean True and False
+> identifiers
+> boolean True and False
 - print() and input()
 - validate input (remember - all input is string)
 - type and type conversion
