@@ -6,9 +6,16 @@ def fnA(x): # we may choose to pass in arguments
 def askUser(prompt):
     '''show the user a prompt and invite them to respond by typing'''
     # the code will pause for input and only continue when the user presses ENTER
-    u = input('please type something: ')
-    return u # we my choose to return something from a function
+    u = input(prompt)
+    # respond differently depending on the nature of the input
+    if u.isnumeric(): # checks to see if the string contains ONLY digits (not . or -)
+        u = int(u) # cast the string to an integer
+    elif u == '': # else if
+        u = None # convert an emtpy string to None 
+    else:
+        pass # useful if we may come back and change this code       
 
+    return u # we my choose to return something from a function
 
 
 # we can invoke any function as often as we like
@@ -18,3 +25,6 @@ fnA('wibble')
 fnA(False)
 fnA( [4,3,2] )
 fnA( (4,7,-1) )
+response = askUser('Enter value: ')
+
+print(response, type(response)) # the result of input() is ALWAYS a string
