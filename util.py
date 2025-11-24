@@ -8,10 +8,12 @@ def checkNumeric(n):
     else:
         valid=False
     # we could have just returned in the logic above
-    if valid:
-        return n
-    else:
-        return 0
+    # if valid:
+    #     return n
+    # else:
+    #     return 0
+    # alternative syntax  [value_1] if [expression] else [value_2]
+    return n if valid else 0
     
 if __name__ == '__main__':
     print( checkNumeric(33) )
