@@ -67,6 +67,6 @@ Wednesday
 - Objects and Classes (OOP)
   classes have properties (something belonging to the class) and methods (something the class can do)
 - get/set as property decorators @property
-- name mangling (__) and __slots__
+- name mangling (__) and __slots__ (a bit like private)
 - properties, methods
 - review exercise

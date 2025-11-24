@@ -1,6 +1,6 @@
 # we may collect some useful utilities into a module
 
-def checkNumeric(n):
+def checkNumeric(n=0): # we expect a single positional argument. We may choose to provide default value
     '''Validate the incoming n is int or float
     If it is not, return zero'''
     if type(n) in (int, float):
@@ -21,3 +21,4 @@ if __name__ == '__main__':
     print( checkNumeric(3.3) )
     print( checkNumeric('33') )
     print( checkNumeric(None) )
+    print( checkNumeric() )   # ummmmmm......?????
