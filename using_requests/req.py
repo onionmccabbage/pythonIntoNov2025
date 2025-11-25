@@ -23,14 +23,21 @@ def checkInRange(v):
         return 1 # just choose a sensible default
 
 def getOnePhoto(n=1): 
-    '''retrieve a single hoto using teh id value n
+    '''retrieve a single photo using the id value n
     Validate that n is a positive integer 1-5000'''
-
-
-
+    n = checkInRange(n)
+    url = 'https://jsonplaceholder.typicode.com/photos'
+    try:
+        response = requests.get(f'{url}/{n}')
+        photo=response.json()
+        return photo
+    except Exception as err:
+        print(f'Something went wrong: {err}')
 
 # exercise the code
 if __name__ == '__main__':
     '''this will only run when this module is directly invoked'''
     p = getPhotos()
     print(p)
+    d = getOnePhoto(321)
+    print(f"{d['title']} {d['thumbnailUrl']}")
