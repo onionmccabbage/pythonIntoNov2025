@@ -16,7 +16,12 @@ for _ in range(0,11):
 
 # generators
 # imagine we need a bunch of square numbers
-squares = (i*i for i in range(0,11))
+squares = (i*i for i in range(0,11)) # this is a generator object
+print(squares)
+# we can use generators in list comprehension
+squares_l = [i*i for i in range(0,11)] # this results in a list (in-memory)
+print(squares_l)
+
 for s in squares:
     print(f'The next square numer is {s}')
 
@@ -33,8 +38,9 @@ for _ in fives:
     print(_, end=', ') # we may choose to override the default new-line
 
 # we can include the functionality within the generator
-evens = ( _ for (_//2==int(_/2) in range(0,11))
+#         return       range       condition   this is a generator expression
+evens = ( _ for _ in range(0,11) if int(_/2)==_/2)
 
-# for _ in evens:
-#     print(_)
+for _ in evens:
+    print(_)
 

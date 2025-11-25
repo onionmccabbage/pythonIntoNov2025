@@ -41,13 +41,13 @@ Tuesday
 > if __name__ == '__main__'
 - range, generators <<< see completed solution
 - comprehensions
-- to add libraries to python:
+> to add libraries to python:
   - python -m ensurepip
   - python –m pip install requests (or any other library you need)
   or 
   - pip3 install requests
     to see what libraries are already installed: pip list
-- using requests (to access web API via HTTP)
+> using requests (to access web API via HTTP)
 - strings with triple quotes
 > exception handling (try-except etc.)
 - debug tools   

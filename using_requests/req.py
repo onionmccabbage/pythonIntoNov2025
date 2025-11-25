@@ -29,7 +29,7 @@ def getOnePhoto(n=1):
     url = 'https://jsonplaceholder.typicode.com/photos'
     try:
         response = requests.get(f'{url}/{n}')
-        photo=response.json()
+        photo=response.json() # take the raw JSON and make a python structure
         return photo
     except Exception as err:
         print(f'Something went wrong: {err}')
@@ -40,4 +40,8 @@ if __name__ == '__main__':
     p = getPhotos()
     print(p)
     d = getOnePhoto(321)
+    # we can pick out the values to show in a nicely formatted string
     print(f"{d['title']} {d['thumbnailUrl']}")
+
+    # what kind of structures do we have?
+    print(type(p), type(d))
