@@ -39,7 +39,7 @@ Monday
 Tuesday
 - quick review of where we got to
 - if __name__ == '__main__'
-- range, generators
+- range, generators <<< see completed solution
 - comprehensions
 - to add libraries to python:
   - python -m ensurepip
