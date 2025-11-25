@@ -1,4 +1,4 @@
-Python Review 2
+Python Review 2 about 1hr20min until 2:50
 ===============
 Ask the user for a category (and also for an id)
 Use these to make a call to an API and show the results
@@ -7,7 +7,7 @@ This is a chance to explore Python
 - Alter these instructions to suit your thinking
 - Think about architecture (maybe use separate functions, modules and imports)
   (although it can be one single file!!)
-- Look online, talk to each other, ask me etc.
+- gererate code, Look online, talk to each other, ask me etc.
 There will be an opportunity to share your code at the end
 
 Details:
