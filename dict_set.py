@@ -12,7 +12,7 @@ d['fave'] = 'Python'
 # we cannot use numeric ordinality to access dict members
 print(f"Name: {d['n']} Type:{d['type']} Age:{d['age']} Favourite:{d['fave']}")
 # we may choose to iterate over all the key-value pairs in a dict
-for (k, v) in d.items():
+for (k, v) in d.items(): # d.values() and d.keys()
     print(k,v)
 
 # a Set is a non ordinal, mutable collection of unique primitive values

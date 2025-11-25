@@ -11,8 +11,8 @@ Toby Dussek
  3:00 afternoon break 15min
  4:30 end
 
+Recordings will be here https://sites.neueda.com/lm_ericsson_programming_in_python/site/index.html
 all my code wil be here https://github.com/onionmccabbage/pythonIntoNov2025
-
 
 Monday
 > Welcome and intros
@@ -32,9 +32,9 @@ Monday
 > print formatting
 > after lunch review exercise
 > dictionaries, set
-- import, libraries and modules
-- functions: kw and defaults
-- packages (simply a folder containing python files)
+> import, libraries and modules
+> functions and defaults
+> packages (simply a folder containing python files)
 
 Tuesday
 - quick review of where we got to

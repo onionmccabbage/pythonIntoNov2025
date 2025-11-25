@@ -21,6 +21,8 @@ print(s[9]) # 'o'
 print( s[4:21:2] ) # slicing is always start:stop-before:step, with sensible defaults
 # we can use connvenient print formatting to nicely output our print
 print(f"We have {b}, also {w} and {s[11:33]}") # NB this is a string builder - the string is immutable
+# you my come across this alternative string formtting syntax
+print("We have {}, also {} and {}".format(b,w,s[11:33])) # NB this is a string builder - the string is immutable
 
 # List and Tuple
 # a list is an ordinal mutable collection of any data type

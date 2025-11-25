@@ -28,4 +28,4 @@ if __name__ == '__main__':
     print( checkNumeric(3.3) )
     print( checkNumeric('33') )
     print( checkNumeric(None) )
-    print( checkNumeric() )   # ummmmmm......?????
+    print( checkNumeric() )   # the function arguent default value is used
