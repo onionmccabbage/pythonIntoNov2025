@@ -12,7 +12,10 @@ def readTextFile():
         # fin.close() # it is always a good idea to tidy up and release resources at the earliest opporunity
         # alternatively we may use 'with'
         with open('my_log.txt', 'r') as fin:
-            t = fin.read() # the 'with' operator will close() the asset when done
+            t = fin.read() # retrieves everything as a single string
+            # t = fin.readlines() # retrieves a list contaiing each line as a string
+            # t = fin.readline() # retrieves the next line
+            # t = fin.readline() # the 'with' operator will close() the asset when done
         return t
 
     # the file may not exist
@@ -23,4 +26,4 @@ def readTextFile():
 
 if __name__ == '__main__':
     t = readTextFile()
-    print(t)
+    print(t, type(t))
