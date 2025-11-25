@@ -37,8 +37,8 @@ Monday
 > packages (simply a folder containing python files)
 
 Tuesday
-- quick review of where we got to
-- if __name__ == '__main__'
+> quick review of where we got to
+> if __name__ == '__main__'
 - range, generators <<< see completed solution
 - comprehensions
 - to add libraries to python:
@@ -49,7 +49,7 @@ Tuesday
     to see what libraries are already installed: pip list
 - using requests (to access web API via HTTP)
 - strings with triple quotes
-- exception handling (try-except etc.)
+> exception handling (try-except etc.)
 - debug tools   
 - review exercise
 - File input and output
