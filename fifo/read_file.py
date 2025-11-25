@@ -3,9 +3,16 @@
 def readTextFile():
     '''retrieve text from a file using a file access object'''
     try:
-        fin = open('my_log.txt', 'r') # r will read (text is the default)
-        t = fin.read() # read all the contents of the file
-        fin.close() # it is always a good idea to tidy up and release resources at the earliest opporunity
+        # every file access object is a mechanism to ask the operating system to handle a file
+        # we create an _io_wrapper
+        # fin = open('my_log.txt', 'r') # r will read (text is the default)
+        # print(type(fin))
+        # we may use the following simple syntax
+        # t = fin.read() # read all the contents of the file
+        # fin.close() # it is always a good idea to tidy up and release resources at the earliest opporunity
+        # alternatively we may use 'with'
+        with open('my_log.txt', 'r') as fin:
+            t = fin.read() # the 'with' operator will close() the asset when done
         return t
 
     # the file may not exist
