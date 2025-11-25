@@ -9,9 +9,14 @@ def myFn():
     # we need to make sure the string is numeric
     try:
         n = int(float(response))
-    except Exception as err:
+    except ValueError as err: # we may choose to handle specific kinds of exception
         print(f'There is a problem {err}')
+    except Exception as err:
+        print(f'A more serious problem occured {err}')
+    finally:
+        print('The finally block will always run, whether or not we had an exception')
 
 if __name__ == '__main__':
     '''this is where we exercise the code'''
+    myFn()
     myFn()
