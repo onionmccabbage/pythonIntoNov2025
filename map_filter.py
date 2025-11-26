@@ -15,8 +15,12 @@ def checkEven(n):
 def main():
     '''It is common practice to have a function called main'''
     # use map (make a tuple or a list)
+    # NB be careful we do not call the function, we merely refer to it
     s = tuple(map(makeSquare, range(1,11))) # NB any collection will do - a range, a generator, a list a tuple...
     print( s )
+    # use filter
+    f = list(filter(checkEven, range(0,11)))
+    print(f) # a filter object
 
 
 if __name__ == '__main__':
