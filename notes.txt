@@ -17,7 +17,7 @@ all my code wil be here https://github.com/onionmccabbage/pythonIntoNov2025
 Monday
 > Welcome and intros
 > where to write code: module (just a file) or immediate python
-- architecture, structure, and professional code best practice
+> architecture, structure, and professional code best practice
 > maths operators and data types
 > indentation
 > immutable strings
@@ -39,8 +39,8 @@ Monday
 Tuesday
 > quick review of where we got to
 > if __name__ == '__main__'
-- range, generators <<< see completed solution
-- comprehensions
+> range, generators
+> comprehensions
 > to add libraries to python:
   - python -m ensurepip
   - python –m pip install requests (or any other library you need)
@@ -69,9 +69,15 @@ Wednesday
 > get/set as property decorators @property
 > name mangling (__) and __slots__ (a bit like private)
 > properties, methods
-- review exercise
+> review exercise
 - custom generator and yield
-- map and reduce
+- map and filter
+
+
+
+
+
 
 end of course: feedback about the three days
+   https://apps.powerapps.com/play/17579985-153c-4727-b1f4-8b53e48b5e72?tenantId=92e84ceb-fbfd-47ab-be52-080c6b87953f&Type=ILT&ID=LZU1500463&OID=519521&Title=Programming%20in%20Python&Owner=Sumit%20Lakhwan
 
