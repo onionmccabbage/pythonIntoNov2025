@@ -36,6 +36,9 @@ class Person: # by convention we use initial cap for class names
     def __str__(self):
         '''We override the built-in __str__ function to choose our own print formatting'''
         return f'{self.n} is {self.a} years old'
+    # we can also determine how the class instance is represented when running in immediate mode
+    def __repr__(self):
+        return f'{self.a} year-old {self.n}'
 
 
 if __name__ == '__main__':
@@ -65,3 +68,4 @@ if __name__ == '__main__':
     # c.__other = False # fails if we have declared which slots are pemitted
     # what happens when we print an instance of this class?
     print(c, type(c))
+    print(  c.__repr__()  ) # we may invoke methods of the class directly
