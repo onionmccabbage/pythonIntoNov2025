@@ -14,8 +14,8 @@ def checkEven(n):
 
 def main():
     '''It is common practice to have a function called main'''
-    # use map
-    s = map(makeSquare(), range(1,11)) # NB any collection will do - a range, a generator, a list a tuple...
+    # use map (make a tuple or a list)
+    s = tuple(map(makeSquare, range(1,11))) # NB any collection will do - a range, a generator, a list a tuple...
     print( s )
 
 
