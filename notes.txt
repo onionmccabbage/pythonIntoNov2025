@@ -57,18 +57,21 @@ Tuesday
 > the nature of file access objects
 
 Wednesday
-- quick review of where we got to
-- in Python EVERTHING is an Object - every function, every class every module....
-- any input or output is necessarily slow: I/O bound
-- functions live in classes, which live in modules which live in packages
-- custom generator and yield
-- global and local scope 
-- data modelling structures: 
+> quick review of where we got to
+> in Python EVERTHING is an Object - every function, every class every module....
+> any input or output is necessarily slow: I/O bound
+> functions live in classes, which live in modules which live in packages
+> global and local scope 
+> data modelling structures: 
     use built in structures until they do not suit the purpose (then use classes)
-- Objects and Classes (OOP)
+> Objects and Classes (OOP)
   classes have properties (something belonging to the class) and methods (something the class can do)
-- get/set as property decorators @property
-- name mangling (__) and __slots__ (a bit like private)
-- properties, methods
+> get/set as property decorators @property
+> name mangling (__) and __slots__ (a bit like private)
+> properties, methods
 - review exercise
+- custom generator and yield
+- map and reduce
+
+end of course: feedback about the three days
 

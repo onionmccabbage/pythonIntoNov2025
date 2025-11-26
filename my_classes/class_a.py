@@ -1,5 +1,8 @@
 # there is no relationship between the file name and any class name
 
+# NB every class defaults to inheriting from 'object'
+# class Person(object):
+# class Person():
 class Person: # by convention we use initial cap for class names
     __slots__ = ['__n', '__a'] # the only permitted properties for this class
     # we usually choose to declare an initialization method
