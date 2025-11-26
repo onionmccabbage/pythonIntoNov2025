@@ -6,7 +6,7 @@ class Person: # by convention we use initial cap for class names
     def __init__(self, n, a): # __init__ will run once every time we create an instance
         self.n = n # self is a way to refer to the created instance
         self.a = a # self.a refers to the get/set methods for 'a'
-        self.checkAge(a)
+
     # we often write methods of the class, including property validation methods
     @property # here we decorate our function as a property
     def a(self): # getter or accessor method. This function behaves as a property
@@ -18,6 +18,8 @@ class Person: # by convention we use initial cap for class names
         '''this is the property setter method for the value 'a' '''
         if type(new_a)==int and new_a>0:
             self.__a = new_a # __a is called 'name mangling'
+        else: # we must decide what will we do if the validation fails
+            raise TypeError # we might do nothing, or set a sensible default
 
 
 if __name__ == '__main__':
