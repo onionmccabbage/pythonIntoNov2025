@@ -71,7 +71,8 @@ Wednesday
 > properties, methods
 > review exercise
 > custom generator and yield
-- map and filter
+> map and filter
+> system path (where Python looks when importing, etc.)
 
 
 

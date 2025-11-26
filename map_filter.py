@@ -18,7 +18,7 @@ def main():
     # NB be careful we do not call the function, we merely refer to it
     s = tuple(map(makeSquare, range(1,11))) # NB any collection will do - a range, a generator, a list a tuple...
     print( s )
-    # use filter
+    # use filter - pply to any ordinal collection of values
     f = list(filter(checkEven, range(0,11)))
     print(f) # a filter object
 
