@@ -53,8 +53,8 @@ Tuesday
 > scope
 > debug tools   
 > review exercise
-- File input and output
-- the nature of file access objects
+> Text File input and output
+> the nature of file access objects
 
 Wednesday
 - quick review of where we got to
@@ -71,3 +71,4 @@ Wednesday
 - name mangling (__) and __slots__ (a bit like private)
 - properties, methods
 - review exercise
+
