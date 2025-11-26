@@ -1,6 +1,7 @@
 # there is no relationship between the file name and any class name
 
 class Person: # by convention we use initial cap for class names
+    __slots__ = ['__n', '__a'] # the only permitted properties for this class
     # we usually choose to declare an initialization method
     # remember - anything with double underscores fore and aft is part of python
     def __init__(self, n, a): # __init__ will run once every time we create an instance
@@ -22,6 +23,7 @@ class Person: # by convention we use initial cap for class names
     @property # here we decorate our function as a property
     def a(self): # getter or accessor method. This function behaves as a property
         '''this is the property getter method for the value 'a' '''
+        # name mangling prevents access t oa mangled propertyn from outside the class
         return self.__a
     # Python never allows funtions to share the same name, except with get/set decorators
     @a.setter # this setter will be invoked whenever we try to mutate the value of 'a'
@@ -48,3 +50,5 @@ if __name__ == '__main__':
         
     # we may see the values in our class instances
     print(f'Name: {c.n} Age: {c.a}')
+    # can we access the name-mangled properties directly?
+    print(c.__n) # fail
