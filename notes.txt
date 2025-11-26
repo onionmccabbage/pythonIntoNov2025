@@ -70,7 +70,7 @@ Wednesday
 > name mangling (__) and __slots__ (a bit like private)
 > properties, methods
 > review exercise
-- custom generator and yield
+> custom generator and yield
 - map and filter
 
 
