@@ -19,7 +19,7 @@ class Person: # by convention we use initial cap for class names
         if type(new_a)==int and new_a>0:
             self.__a = new_a # __a is called 'name mangling'
         else: # we must decide what will we do if the validation fails
-            raise TypeError # we might do nothing, or set a sensible default
+            raise TypeError('Age must be a positive integer') # we might do nothing, or set a sensible default
 
 
 if __name__ == '__main__':
@@ -27,6 +27,6 @@ if __name__ == '__main__':
     c = Person('Olga', 32) # we now have an instance of our class (the __init__ runs once)
     f = Person('Floella', 72) # we now have an instance of our class (the __init__ runs once)
     # by default class properties are mutable
-    c.a = [42, 0, True, None]
+    c.a = -42 # [42, 0, True, None]
     # we may see the values in our class instances
     print(f'Name: {c.n} Age: {c.a}')
