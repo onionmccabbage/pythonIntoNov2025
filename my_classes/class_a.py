@@ -6,6 +6,17 @@ class Person: # by convention we use initial cap for class names
     def __init__(self, n, a): # __init__ will run once every time we create an instance
         self.n = n # self is a way to refer to the created instance
         self.a = a # self.a refers to the get/set methods for 'a'
+# Mini-challenge: write get/set decorated methods to validate n as a non empty string
+    @property
+    def n(self): # remember - methods of a class MUST take 'self' as the first argument
+        return self.__n
+    @n.setter
+    def n(self, new_n):
+        if type(new_n)==str and new_n !='':
+            self.__n = new_n
+        else:
+            raise TypeError('Name must be a non-empty string')
+
 
     # we often write methods of the class, including property validation methods
     @property # here we decorate our function as a property
