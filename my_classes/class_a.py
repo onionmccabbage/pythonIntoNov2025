@@ -17,14 +17,13 @@ class Person: # by convention we use initial cap for class names
             self.__n = new_n
         else:
             raise TypeError('Name must be a non-empty string')
-
-
-    # we often write methods of the class, including property validation methods
     @property # here we decorate our function as a property
     def a(self): # getter or accessor method. This function behaves as a property
         '''this is the property getter method for the value 'a' '''
         # name mangling prevents access t oa mangled propertyn from outside the class
         return self.__a
+    # we often write methods of the class, including property validation methods
+    # the @property decorator MUST immediately preceed the function
     # Python never allows funtions to share the same name, except with get/set decorators
     @a.setter # this setter will be invoked whenever we try to mutate the value of 'a'
     def a(self, new_a): # setter or mutator method
@@ -33,6 +32,10 @@ class Person: # by convention we use initial cap for class names
             self.__a = new_a # __a is called 'name mangling'
         else: # we must decide what will we do if the validation fails
             raise TypeError('Age must be a positive integer') # we might do nothing, or set a sensible default
+    # we can manage how this class gets printed
+    def __str__(self):
+        '''We override the built-in __str__ function to choose our own print formatting'''
+        return f'{self.n} is {self.a} years old'
 
 
 if __name__ == '__main__':
@@ -56,7 +59,9 @@ if __name__ == '__main__':
     # name-mangled class properties are designed to be inaccesible from outside the class
     # but...
     # we would never aim to deliverately jigger our code, but you can
-    c._Person__n = None   # if we really need to we can mutate class proeprties directly
-    print( c._Person__n ) # we CAN access name-mangled proeprties
+    # c._Person__n = None   # if we really need to we can mutate class proeprties directly
+    # print( c._Person__n ) # we CAN access name-mangled proeprties
     # did the slots work....
-    c.__other = False # fails if we hve declared which slots are pemitted
+    # c.__other = False # fails if we have declared which slots are pemitted
+    # what happens when we print an instance of this class?
+    print(c, type(c))
