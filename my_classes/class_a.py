@@ -51,4 +51,12 @@ if __name__ == '__main__':
     # we may see the values in our class instances
     print(f'Name: {c.n} Age: {c.a}')
     # can we access the name-mangled properties directly?
-    print(c.__n) # fail
+    # print(c.__n) # fail
+
+    # name-mangled class properties are designed to be inaccesible from outside the class
+    # but...
+    # we would never aim to deliverately jigger our code, but you can
+    c._Person__n = None   # if we really need to we can mutate class proeprties directly
+    print( c._Person__n ) # we CAN access name-mangled proeprties
+    # did the slots work....
+    c.__other = False # fails if we hve declared which slots are pemitted
