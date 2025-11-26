@@ -38,6 +38,13 @@ if __name__ == '__main__':
     c = Person('Olga', 32) # we now have an instance of our class (the __init__ runs once)
     f = Person('Floella', 72) # we now have an instance of our class (the __init__ runs once)
     # by default class properties are mutable
-    c.a = -42 # [42, 0, True, None]
+    try:
+        c.n = ''
+        c.a = -42 # [42, 0, True, None]
+    except TypeError as te:
+        print(te)
+    except Exception as err:
+        print(f'Something went wring: {err}')
+        
     # we may see the values in our class instances
     print(f'Name: {c.n} Age: {c.a}')
